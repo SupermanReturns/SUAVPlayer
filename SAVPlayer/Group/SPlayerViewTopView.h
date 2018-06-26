@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SPlayerViewTopView : UIView
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, strong) UIButton *backButton;
 
 @end

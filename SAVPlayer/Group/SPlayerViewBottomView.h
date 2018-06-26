@@ -8,7 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@class SPlayerViewBottomView;
+@protocol SPlayerViewBottomViewDelegate <NSObject>
 
+@optional
+- (void)playerViewBottomView:(SPlayerViewBottomView *)bottomView didClcikControlButton:(UIButton *)controlButton;
+- (void)playerViewBottomView:(SPlayerViewBottomView *)bottomView didClcikFullScreenButton:(UIButton *)FullScreenButton;
+- (void)playerViewBottomView:(SPlayerViewBottomView *)bottomView didUpdateProgressView:(SPlayerProgressView *)progressView;
+- (void)playerViewBottomView:(SPlayerViewBottomView *)bottomView sliderPositionSliderUp:(SPlayerProgressView *)progressView;
+- (void)playerViewBottomView:(SPlayerViewBottomView *)bottomView sliderPositionSliderDown:(SPlayerProgressView *)progressView;
+
+@end
 
 @interface SPlayerViewBottomView : UIView
 
@@ -34,7 +44,7 @@
  */
 @property (nonatomic, weak) XHPlayerProgressView *progressView;
 
-@property (nonatomic, weak) id <XHPlayerViewBottomViewDelegate> delegate;
+@property (nonatomic, weak) id <SPlayerViewBottomViewDelegate> delegate;
 
 - (void)updatePlayingTime:(CGFloat)readDuration;
 - (void)updateTotalTime:(CGFloat)taotalDuration;

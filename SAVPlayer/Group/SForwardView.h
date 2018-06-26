@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum {
+    SForwardViewModeForward,
+    SHForwardViewModeRewind
+}SForwardViewMode;
+
 @interface SForwardView : UIView
+
+@property (nonatomic, weak) UILabel *timeLabel;
+@property (nonatomic, assign) SForwardViewMode mode;
 
 @end

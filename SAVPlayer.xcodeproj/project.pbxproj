@@ -15,6 +15,13 @@
 		CF2B43D120DF4915006104AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2B43D020DF4915006104AF /* main.m */; };
 		CF2B43DB20DF4916006104AF /* SAVPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2B43DA20DF4916006104AF /* SAVPlayerTests.m */; };
 		CF2B43E620DF4916006104AF /* SAVPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2B43E520DF4916006104AF /* SAVPlayerUITests.m */; };
+		CF2B43F520E1E2F4006104AF /* SVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2B43F420E1E2F4006104AF /* SVideoCell.m */; };
+		CF2B43F920E1E40F006104AF /* SPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2B43F820E1E40F006104AF /* SPlayer.m */; };
+		CF2B43FC20E1E458006104AF /* SPlayerViewBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2B43FB20E1E458006104AF /* SPlayerViewBottomView.m */; };
+		CF2B43FF20E1E49C006104AF /* SPlayerProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2B43FE20E1E49C006104AF /* SPlayerProgressView.m */; };
+		CF2B440220E1E4C2006104AF /* SPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2B440120E1E4C2006104AF /* SPlayerView.m */; };
+		CF2B440520E1E505006104AF /* SForwardView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2B440420E1E505006104AF /* SForwardView.m */; };
+		CF2B440820E1E524006104AF /* SPlayerViewTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2B440720E1E524006104AF /* SPlayerViewTopView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,20 @@
 		CF2B43E120DF4916006104AF /* SAVPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAVPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2B43E520DF4916006104AF /* SAVPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAVPlayerUITests.m; sourceTree = "<group>"; };
 		CF2B43E720DF4916006104AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2B43F320E1E2F4006104AF /* SVideoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVideoCell.h; sourceTree = "<group>"; };
+		CF2B43F420E1E2F4006104AF /* SVideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVideoCell.m; sourceTree = "<group>"; };
+		CF2B43F720E1E40F006104AF /* SPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPlayer.h; sourceTree = "<group>"; };
+		CF2B43F820E1E40F006104AF /* SPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPlayer.m; sourceTree = "<group>"; };
+		CF2B43FA20E1E458006104AF /* SPlayerViewBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPlayerViewBottomView.h; sourceTree = "<group>"; };
+		CF2B43FB20E1E458006104AF /* SPlayerViewBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPlayerViewBottomView.m; sourceTree = "<group>"; };
+		CF2B43FD20E1E49C006104AF /* SPlayerProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPlayerProgressView.h; sourceTree = "<group>"; };
+		CF2B43FE20E1E49C006104AF /* SPlayerProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPlayerProgressView.m; sourceTree = "<group>"; };
+		CF2B440020E1E4C2006104AF /* SPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPlayerView.h; sourceTree = "<group>"; };
+		CF2B440120E1E4C2006104AF /* SPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPlayerView.m; sourceTree = "<group>"; };
+		CF2B440320E1E505006104AF /* SForwardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SForwardView.h; sourceTree = "<group>"; };
+		CF2B440420E1E505006104AF /* SForwardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SForwardView.m; sourceTree = "<group>"; };
+		CF2B440620E1E524006104AF /* SPlayerViewTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPlayerViewTopView.h; sourceTree = "<group>"; };
+		CF2B440720E1E524006104AF /* SPlayerViewTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPlayerViewTopView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +122,13 @@
 		CF2B43C020DF4912006104AF /* SAVPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				CF2B43F620E1E332006104AF /* Group */,
 				CF2B43C120DF4912006104AF /* AppDelegate.h */,
 				CF2B43C220DF4912006104AF /* AppDelegate.m */,
 				CF2B43C420DF4912006104AF /* ViewController.h */,
 				CF2B43C520DF4912006104AF /* ViewController.m */,
+				CF2B43F320E1E2F4006104AF /* SVideoCell.h */,
+				CF2B43F420E1E2F4006104AF /* SVideoCell.m */,
 				CF2B43C720DF4912006104AF /* Main.storyboard */,
 				CF2B43CA20DF4915006104AF /* Assets.xcassets */,
 				CF2B43CC20DF4915006104AF /* LaunchScreen.storyboard */,
@@ -130,6 +154,25 @@
 				CF2B43E720DF4916006104AF /* Info.plist */,
 			);
 			path = SAVPlayerUITests;
+			sourceTree = "<group>";
+		};
+		CF2B43F620E1E332006104AF /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				CF2B43F720E1E40F006104AF /* SPlayer.h */,
+				CF2B43F820E1E40F006104AF /* SPlayer.m */,
+				CF2B43FA20E1E458006104AF /* SPlayerViewBottomView.h */,
+				CF2B43FB20E1E458006104AF /* SPlayerViewBottomView.m */,
+				CF2B440620E1E524006104AF /* SPlayerViewTopView.h */,
+				CF2B440720E1E524006104AF /* SPlayerViewTopView.m */,
+				CF2B43FD20E1E49C006104AF /* SPlayerProgressView.h */,
+				CF2B43FE20E1E49C006104AF /* SPlayerProgressView.m */,
+				CF2B440020E1E4C2006104AF /* SPlayerView.h */,
+				CF2B440120E1E4C2006104AF /* SPlayerView.m */,
+				CF2B440320E1E505006104AF /* SForwardView.h */,
+				CF2B440420E1E505006104AF /* SForwardView.m */,
+			);
+			path = Group;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +305,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2B43FF20E1E49C006104AF /* SPlayerProgressView.m in Sources */,
 				CF2B43C620DF4912006104AF /* ViewController.m in Sources */,
+				CF2B43FC20E1E458006104AF /* SPlayerViewBottomView.m in Sources */,
+				CF2B440220E1E4C2006104AF /* SPlayerView.m in Sources */,
+				CF2B43F520E1E2F4006104AF /* SVideoCell.m in Sources */,
+				CF2B440520E1E505006104AF /* SForwardView.m in Sources */,
 				CF2B43D120DF4915006104AF /* main.m in Sources */,
+				CF2B43F920E1E40F006104AF /* SPlayer.m in Sources */,
+				CF2B440820E1E524006104AF /* SPlayerViewTopView.m in Sources */,
 				CF2B43C320DF4912006104AF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

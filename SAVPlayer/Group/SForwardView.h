@@ -10,7 +10,7 @@
 
 typedef enum {
     SForwardViewModeForward,
-    SHForwardViewModeRewind
+    SForwardViewModeRewind
 }SForwardViewMode;
 
 @interface SForwardView : UIView

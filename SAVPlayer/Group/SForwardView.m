@@ -61,12 +61,13 @@
         make.size.mas_equalTo(CGSizeMake(20, 40));
         make.right.equalTo(self.timeLabel.mas_left);
     }];
+    
 }
 
 - (void)setMode:(SForwardViewMode)mode{
     _mode = mode;
     switch (mode) {
-        case SHForwardViewModeRewind:
+        case SForwardViewModeRewind:
             self.forwardImageView.hidden=YES;
             self.rewindImageView.hidden=NO;
             break;

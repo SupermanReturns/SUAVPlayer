@@ -53,7 +53,6 @@
     CGRect progressBounds = [self trackRectForBounds:self.bounds];
     progressBounds.origin.y -= 1;
     
-    
     self.bufferProgressTintColor = [UIColor greenColor];
     self.progressWidth = 3.0;
     self.bufferProgressLayer = [CAShapeLayer layer];

@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @class SPlayerViewBottomView;
+@class SPlayerProgressView;
 @protocol SPlayerViewBottomViewDelegate <NSObject>
 
 @optional
@@ -42,7 +44,7 @@
 /**
  *  进度条
  */
-@property (nonatomic, weak) XHPlayerProgressView *progressView;
+@property (nonatomic, strong) SPlayerProgressView *progressView;
 
 @property (nonatomic, weak) id <SPlayerViewBottomViewDelegate> delegate;
 

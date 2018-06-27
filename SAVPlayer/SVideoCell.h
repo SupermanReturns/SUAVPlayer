@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class SVideo;
 
 @interface SVideoCell : UITableViewCell
+@property (nonatomic, strong) SVideo *video;
+
++ (instancetype)videoCellWithTableView:(UITableView *)tableView;
 
 @end
